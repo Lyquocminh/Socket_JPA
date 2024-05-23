@@ -81,7 +81,7 @@
 		// TODO Auto-generated method stub
 		return enManager.createNamedQuery("findStaffByDepartment", Staff.class).setParameter("departmentId", departmentId).getResultList();
 	}
-
+```
  @NamedQueries({
 	@NamedQuery(name = "Staff.findAll", query = "SELECT s FROM Staff s"),
     @NamedQuery(name = "Staff.findByName", query = "SELECT s FROM Staff s WHERE s.name = :name"),
@@ -89,3 +89,4 @@
     @NamedQuery(name = "Staff.findByDepartment", query = "SELECT s FROM Staff s inner join department d WHERE d.id = :departmentId"),
     @NamedQuery(name = "Staff.findByProject", query = "SELECT s FROM Staff s JOIN s.projects p WHERE p = :project")
 })
+```
