@@ -3,7 +3,7 @@
 	@Column(name = "number")
 	private Set<String> phoneNumbers;
 
- //add
+
  	@Override
 	public boolean addStaff(Staff staff) {
 		EntityTransaction transaction = enManager.getTransaction();
@@ -20,7 +20,7 @@
 		// TODO Auto-generated method stub
 		return false;
 	}
- //update
+
  	@Override
 	public boolean updateStaff(Staff staff) {
 		EntityTransaction transaction = enManager.getTransaction();
@@ -37,7 +37,6 @@
 		// TODO Auto-generated method stub
 		return false;
 	}
-//remove
 	@Override
 	public boolean deleteStaff(long id) {
 		EntityTransaction transaction = enManager.getTransaction();
@@ -56,7 +55,6 @@
 		return false;
 	}
 
- //tron
  	@Override
 	public Staff findStaffByID(long id) {
 		Staff staff = enManager.find(Staff.class, id);
